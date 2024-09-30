@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Personal Dashboard</title>
+    <style>
+        body {
+            background: url('https://your-background-image-url-here.jpg') no-repeat center center fixed; /* Replace with your image URL */
+            background-size: cover;
+        }
+        /* Fixed positioning for time */
+        #time {
+            position: absolute;
+            top: 50%; /* Center it vertically */
+            left: 50%; /* Center it horizontally */
+            transform: translate(-50%, -50%); /* Adjust to truly center */
+        }
+        /* Fixed positioning for author */
+        #author {
+            position: absolute;
+            bottom: 10px; /* Position it near the bottom */
+            left: 10px; /* Position it near the left */
+        }
+    </style>
+</head>
+<body class="text-white font-sans">
+    <main class="flex flex-col h-screen p-6 relative"> <!-- Added relative positioning here -->
+        <div class="flex justify-between items-start">
+            <div id="crypto" class="text-lg">
+                <div id="crypto-top" class="flex items-center mb-2"></div>
+            </div>
+            <div id="weather" class="flex items-center justify-end"></div>
+        </div>
+        <h1 id="time" class="text-center text-9xl font-extrabold my-auto"></h1> <!-- Time styling -->
+        <p id="author" class="text-sm"></p> <!-- Author styling -->
+    </main>
+    <script src="index.js" type="module"></script>
+</body>
+</html>
+
+
+
+
+
